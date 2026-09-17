@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-09-17T12:00:00Z",
+  "packages": {
+    "mustermann": {
+      "dependencies": [],
+      "group": "main",
+      "hashes": [
+        "sha256:a3b1f2e4d5c6a7b8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2"
+      ],
+      "source": "registry",
+      "source_detail": {
+        "platform": "ruby",
+        "source": "https://rubygems.org/"
+      },
+      "version": "3.0.0"
+    },
+    "rack": {
+      "dependencies": [],
+      "group": "main",
+      "hashes": [
+        "sha256:c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9"
+      ],
+      "source": "registry",
+      "source_detail": {
+        "platform": "ruby",
+        "source": "https://rubygems.org/"
+      },
+      "version": "3.1.8"
+    },
+    "rack-test": {
+      "dependencies": [
+        "rack"
+      ],
+      "group": "main",
+      "hashes": [],
+      "source": "git",
+      "source_detail": {
+        "platform": "ruby",
+        "revision": "7a5b6e7e95c78d52e9ceef57f8db1d0b0f95a1c3",
+        "source": "https://github.com/rack/rack-test.git",
+        "tag": "v2.1.0"
+      },
+      "version": "2.1.0"
+    },
+    "sinatra": {
+      "dependencies": [
+        "mustermann",
+        "rack"
+      ],
+      "group": "main",
+      "hashes": [],
+      "source": "registry",
+      "source_detail": {
+        "checksum_note": "empty CHECKSUMS entry — Bundler 4.0.21 new behaviour",
+        "platform": "ruby",
+        "source": "https://rubygems.org/"
+      },
+      "version": "4.0.0"
+    }
+  },
+  "pm": "bundler",
+  "pm_version_tested": "4.0.21",
+  "pm_version_under_test": "4.0.21",
+  "root": {
+    "dependencies": [
+      "rack",
+      "rack-test",
+      "sinatra"
+    ],
+    "name": "checksum-signing-git-source",
+    "version": "0.1.0"
+  },
+  "schema_version": "1.2",
+  "source_file": "Gemfile.lock",
+  "warnings": [
+    "sinatra (4.0.0) has an empty CHECKSUMS entry in Gemfile.lock — no sha256 hash recorded; Bundler 4.0.21 changed handling of such slots.",
+    "rack-test (2.1.0) sourced from git — no CHECKSUMS entry expected for git sources; UA resolves via GIT section revision."
+  ]
+}
